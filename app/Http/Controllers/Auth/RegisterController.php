@@ -94,7 +94,7 @@ class RegisterController extends Controller
 
         UserVerification::generate($user);
 
-        UserVerification::send($user, 'My Custom E-mail Subject');
+        UserVerification::send($user, 'Verification Email');
 
         alert()->info('Verification email is sent to you. Click the link to verify your account.', 'Verify Account')->autoclose(3000);
         
