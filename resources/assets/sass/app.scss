@@ -1,0 +1,72 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+@import "wonder/one-page-wonder.scss";
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.color--yellow {
+    color: $color-yellow;
+}
+.color--black {
+    color: $color-black;
+}
+.color--red {
+    color: $color-red;
+}
+
+nav {
+    .dropdown-menu {
+        .dropdown-item {
+            &:hover {
+                background-color: #646565;
+            }
+        }
+    }
+}
+
+footer {
+    ul {
+        padding: 0;
+        list-style: none;
+        li {
+            font-size: 1.3em;
+            a {
+                color: $color-red;
+            }
+        }
+    }
+}
+
+.navbar-custom .navbar-brand {
+    font-family: cursive;
+}
+
+.hero_name {
+}
+
+#app {
+    padding-top: 68px;
+    min-height: calc(100vh - 200px);
+}
+
+.how-it-works {
+    &__steps {
+        list-style: decimal;
+        li {
+            font-size: 2em;
+            padding: 15px 0;
+            @include media-breakpoint-down(md) {
+                padding: 10px 0;
+                font-size: 1.3em;
+            }
+        }
+    }
+}
